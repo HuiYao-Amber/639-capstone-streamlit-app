@@ -59,6 +59,9 @@ http://localhost:8501
 6. Optionally download the graph as JSON.
 
 ## Model Used
+
 Model: gemini-2.5-flash
+
 Provider: Gemini API
+
 Structured output: JSON schema generated from Pydantic models
