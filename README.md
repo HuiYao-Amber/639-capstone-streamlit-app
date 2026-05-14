@@ -20,9 +20,45 @@ This project is designed for educational exploration. Because the graph is gener
 - `requirements.txt`: Python dependencies
 - `README.md`: Project documentation
 
+## Demo Video
+
+Video link: https://drive.google.com/file/d/1k7HckJXCrRf-u6i5Faf7kC281KDJZ65e/view?usp=sharing
+
 ## How to Run
 
 Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Create a local Streamlit secrets file:
+```bash
+.streamlit/secrets.toml
+```
+
+Add your Gemini API key:
+```bash
+GEMINI_API_KEY = "your-api-key-here"
+```
+
+Run the app:
+```bash
+streamlit run app.py
+```
+Open your browser at:
+
+http://localhost:8501
+
+## How to Use
+1. Enter an AI or computer science concept.
+2. Click Generate concept graph.
+3. View the generated interactive graph.
+4. Select any node from the dropdown to view its definition.
+5. Click Expand selected concept to add more related concepts.
+6. Optionally download the graph as JSON.
+
+## Model Used
+Model: gemini-2.5-flash
+Provider: Gemini API
+Structured output: JSON schema generated from Pydantic models
