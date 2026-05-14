@@ -1,5 +1,5 @@
-streamlit
-transformers
-torch
-accelerate
-sentencepiece
+streamlit>=1.37.0
+google-genai>=1.0.0
+pydantic>=2.7.0
+pyvis>=0.3.2
+pandas>=2.0.0
